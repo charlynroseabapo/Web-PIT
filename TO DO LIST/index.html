@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" conetent="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <title>TO-DO LIST</title>
+</head>
+
+<body>
+    <div class="maindiv">
+        <!--  HEADER  -->
+        <div class="header">
+            <h1>MY DAILY TASK </h1>
+            <!-- CONTAINER -->
+            <div class="container">
+                <input type="text" class="task" id="box" placeholder="Insert task here..." />
+                <input type="button" class="btn" value="ADD" style="width: 10vw" />
+            </div>
+        </div>
+        <!-- TABLINK -->
+        <button class="tablink" onclick="todo('Undone', this, '#950740')" id="defaultOpen">Undone</button>
+        <button class="tablink" onclick="todo('Done', this, '#950740')">Done</button>
+        <!-- TABCONTENT -->
+        <div id="Undone" class="tabcontent">
+            <h2>Things need to be done.</h2>
+            <div class="ul_items">
+                <ul>
+                    <li class="check"><input type="checkbox" ><label>Take a bath</label></li>
+                    <li class="check"><input type="checkbox" ><label>Brush my teeth</label></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="Done" class="tabcontent">
+            <h2>Finished task.</h2>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT SOURCE -->
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.js></script>
+</body>
+
+</html>
