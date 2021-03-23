@@ -44,5 +44,11 @@ function todo(todotask,elmnt,color) {
           div.style.display="none";
         }
       }
-    
+      var list = document.querySelector('ol');
+      list.addEventListener('click', function(ev) {
+        if (ev.target.tagName === 'LI') {
+          ev.target.classList.toggle('myList');
+        }
+      }, false);
+      
   }
